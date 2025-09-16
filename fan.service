@@ -1,0 +1,12 @@
+[Unit]
+Description=Automatic Fan Control for Raspberry Pi
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/fan/fan_web.py --mode o
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
