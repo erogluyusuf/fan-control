@@ -39,6 +39,16 @@ pip3 install gpiozero rich
 ## Bağlantı Elemanları
 - Bağlantı kabloları
 
+```
+Raspberry Pi'nin 5V Pini     --->  Fan (+) Ucu
+
+Fan (-) Ucu                  --->  MOSFET'in Drain (D) Bacağı
+
+Raspberry Pi'nin GPIO Pini   --->  Direnç  --->  MOSFET'in Gate (G) Bacağı
+
+MOSFET'in Source (S) Bacağı  --->  Raspberry Pi'nin GND Pini
+```
+
 
 ## KURULUM
 
